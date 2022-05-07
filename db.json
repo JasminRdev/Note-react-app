@@ -1,0 +1,16 @@
+{
+  "storedNotes": [
+    {
+      "note": "finish fullstackopen course",
+      "date": "2022-05-29",
+      "important": true,
+      "id": 5
+    },
+    {
+      "note": "read all books that I once bought",
+      "date": "2022-12-31",
+      "important": false,
+      "id": 6
+    }
+  ]
+}

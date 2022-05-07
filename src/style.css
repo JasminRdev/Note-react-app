@@ -1,0 +1,238 @@
+:root {
+    --red: #D94A4A70;
+    --white: #f7efe3ce;
+    --green: #86BF5E;
+
+    --normalFont:'BIZ UDPGothic', sans-serif;
+    --otherFont: 'Patrick Hand', cursive;
+    
+}
+
+*{
+    padding: 0;
+    transition: .6s;
+    margin: 0;
+   word-break: break-word;
+}
+
+body{
+   background-color: var(--white);
+   font-family: var(--normalFont);
+}
+header{
+    display: flex;
+background-color: var(--red);
+color: var(--white);
+padding: 20px 0 5px 20px;
+line-height: 270%;
+}
+
+.logo{
+    color: var(--red);
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.container{
+    margin: 4% 7%;
+}
+
+
+.containerComp{
+    border-top: 1px solid var(--red);
+    padding: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.containerOfNotes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.all-note-part{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+.new-note{
+    margin:0 auto;
+    width:50%;
+    
+    margin-top: 20px;
+}
+
+ h2, h3{
+    margin-bottom:40px;
+}
+
+h1{
+    margin-bottom: 50px;
+}
+
+p{
+    margin-bottom: 15px;
+    line-height:120%;
+}
+
+.space{
+    margin-bottom: 55px;
+}
+ h5{
+     
+    line-height:160%;
+ }
+.composeInputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    transition: .5s;
+
+}
+
+.composeInputs p {
+    text-align: start;
+    margin: 7px;
+}
+
+
+
+
+.button{
+    padding:15px;
+    background-color: #5e8abf;
+    border-radius:5px;
+    border: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    border: white solid 2px;
+    }
+
+
+.button:hover{
+    opacity: .8;
+}
+
+
+.button:active{
+    opacity: .6;
+}
+
+.each-note{
+    display:grid;
+    padding: 20px;
+    border: 1px solid rgb(241, 182, 182);
+    border-radius: 5px;
+    margin: 20px 20px 20px 0;
+    margin-bottom: 40px;
+    cursor: pointer;
+    word-break: break-all;
+}
+.button-action{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.each-note:hover{
+background-color:rgb(241, 182, 182);
+transition: .7s;
+}
+
+.input{
+    padding:20px;
+    border: none;
+    border-radius:5px;
+    background-color:  #ffffffdf;
+    cursor: pointer;
+    margin: 7px 7px 0 7px;
+    border: rgb(200, 199, 210) solid 2px;
+}
+
+
+.saveB{
+    margin-left: 10px;
+}
+
+
+.icon{
+    background-color: #86BF5E;
+    padding: 5px;
+    border-radius: 5px;
+    color:white;
+    opacity: .5;
+}
+
+.icon:hover{
+    opacity: .8;
+    border: 1px solid white;
+}
+
+.icon:active{
+    opacity: 1;
+}
+
+.icon-red{
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .containerOfNotes{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0;
+    }
+    .all-note-part{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .composeInputs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .input{
+        margin-bottom: 40px;
+    }
+    p{
+        line-height:110%;
+    }
+  }
+
+
+  @media screen and (max-width: 480px) {
+      .new-note{width: auto;
+      }
+  }
+
+
+  
+  .footer{
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: var(--red);
+}
+
+.nav-contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.nav-contacts a{
+    width: 100%;
+}
+
